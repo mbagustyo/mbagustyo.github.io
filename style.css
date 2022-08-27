@@ -1,0 +1,169 @@
+section#concert {
+  padding-top: 6.5rem;
+}
+
+section#about {
+  padding-top: 1.5rem;
+}
+
+section.jumbotron {
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+  background-color: #eaeaea;
+}
+
+section.jumbotron h1 {
+  font-family: "DynaPuff", cursive;
+  font-size: 85px;
+  font-weight: 700;
+}
+
+section.jumbotron h1 span {
+  display: inline-block;
+  transform: rotateZ(-15deg);
+}
+
+section#about div.col h2 span {
+  font-family: "DynaPuff", cursive;
+}
+
+section#about div.col h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: -5;
+}
+
+.granad {
+  position: absolute;
+  width: 50px;
+  top: 550px;
+  z-index: 10;
+  left: 400px;
+  transform: scale(.9);
+}
+
+#about div.row p {
+  font-weight: 100;
+}
+
+section#concert {
+  position: relative;
+  z-index: 3;
+}
+
+#concert div.row div.card:hover {
+  border: 2px solid yellow !important;
+  transform: scale(0.815);
+}
+
+#concert div.row img {
+  height: 270px;
+  border-top-right-radius: 20px;
+}
+
+#concert div.row div.card {
+  margin-bottom: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transform: scale(0.8);
+  transition: 0.6s;
+}
+
+#concert div.row div.card p {
+  font-weight: 100;
+}
+
+#concert div.row h2 {
+  color: #198754;
+  font-family: monospace;
+}
+
+footer {
+  position: relative;
+}
+
+footer p a {
+  text-decoration: none;
+  position: relative;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+  border-radius: 100vh;
+  border: 2.5px solid black;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #dc3545;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+section#concert a {
+  display: inline-block;
+  transform: scale(1);
+  bottom: -10px;
+  left: 100px;
+  position: absolute;
+}
+
+/* Media query */
+@media (max-width: 575.98px) {
+  section.jumbotron h1 {
+    font-size: 70px;
+  }
+
+  .granad {
+    margin-left: 0 !important;
+    transform: scale(0.7);
+    top: 500px;
+    left: 10px;
+    z-index: 10;
+  }
+
+  svg {
+    top: 100px;
+    transform: scale(3.4);
+  }
+
+  svg.svg2 {
+    transform: scale(2);
+    height: 200px;
+  }
+
+  .nav-link:hover::after {
+    display: none;
+  }
+
+  section#concert a {
+    left: 30px;
+  }
+}
